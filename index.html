@@ -1,19 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Happy Birthday 🎂</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Feliz Cumpleaños</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffe4e1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      font-family: 'Georgia', serif;
+    }
+
+    .cake {
+      animation: float 4s ease-in-out infinite;
+      width: 300px;
+    }
+
+    h1 {
+      color: #c2185b;
+      font-size: 2.5rem;
+      margin-top: 20px;
+      animation: fadeIn 3s ease forwards;
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0px); }
+      50%  { transform: translateY(-20px); }
+      100% { transform: translateY(0px); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-  <div class="card">
-    <div class="cake">
-      <div class="candle"></div>
-    </div>
-    <h1 class="Happy__Birthday">Happy Birthday my love 💖</h1>
-  </div>
-
-  <script src="script.js"></script>
+  <img class="cake" src="birthday_image.png" alt="Pastel de cumpleaños animado">
+  <h1>¡Happy Birthday My Love! 🎂</h1>
 </body>
 </html>
